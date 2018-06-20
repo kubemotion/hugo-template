@@ -1,0 +1,12 @@
+name = "Kubemotion"
+license = "MIT"
+licenselink = "https://github.com/kubemotion/hugo-template/blob/master/LICENSE"
+description = "Hugo template for the Kubemotion main site - https://www.kubemotion.com"
+homepage = "https://kubemotion.com/"
+tags = []
+features = []
+min_version = "0.41"
+
+[author]
+  name = "Jose Corral"
+  homepage = "https://github.com/jcleira"
