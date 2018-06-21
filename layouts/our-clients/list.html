@@ -9,7 +9,7 @@
   </div>
   <div class="container-fluid our-clients">
   <!-- TODO: This range only works when we got pair clients due the 2 clients per row. -->
-  {{ range $index, $page:= (.Data.Pages).Reverse }}
+  {{ range $index, $page:= (.Data.Pages).ByWeight }}
     {{ if (modBool $index 2) }}
     <div class="row">
     {{ end  }}
@@ -24,8 +24,8 @@
           </div>
           {{ end }}
         </div>
-        <p class="mt-5"><a href="{{ .Title }}" target="_blank">{{ $page.Title }}</a>
-          {{ $page.Content }}
+        <p class="mt-5">
+        {{ $page.Content }}
         </p>
       </div>
     {{ if not (modBool $index 2) }}
